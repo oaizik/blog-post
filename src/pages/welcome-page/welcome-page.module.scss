@@ -1,0 +1,44 @@
+@import '../../styles/base';
+$breakpoint-tablet: 1000px;
+
+.welcomePage {
+	width: 100vw;
+	height: 78vh;
+	min-height: 650px;
+	min-width: 600px;
+	  
+	.logoContainer {
+		height: 400px;
+		@include flex-v-h-center;
+
+		.svg {
+			width: 500px;
+		}
+	}
+
+	.title {
+		font-size: 36px;
+		color: $white;
+		text-shadow: rgba(0, 0, 0, 0.35) 0px 2px 16px;
+		font-weight: $light-bold-font;
+		text-align: center;
+	}
+
+	.blogButton {
+		width: 200px;
+		height: 44px;
+		margin: 20px auto;
+		border-radius: 30px;
+		color: rgb(187, 38, 73);
+		background-color: $white;
+		font-weight: $light-bold-font;
+		box-shadow: $default-box-shadow;
+		@include flex-v-h-center;
+		
+		&:hover {
+			background-color: #EEEEEE;
+			cursor: pointer;
+		}
+	}
+}
+

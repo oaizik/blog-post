@@ -1,0 +1,111 @@
+@import '../../styles/base';
+
+.postPage {
+	width: 100vw;
+	height: 75vh;
+	padding-top: 3vh;
+	min-height: 650px;
+	min-width: 600px;
+
+    .postContent {
+        width: 50vw;
+        margin: 0 auto;
+
+        @media (max-width: 1200px) {
+            width: 70vw;
+        }
+
+        @media (max-width: 800px) {
+            width: 96vw;
+        }
+
+        .backButton {
+            height: 20px;
+            width: 58px;
+            font-weight: $bold-font;
+            @include hover-opacity;
+        }
+    
+        .postTitle {
+            height: 70px;
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: $bold-font;
+        }
+    
+        .postBody {
+            height: 70px;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    
+        .userName {
+            height: 20px;
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: $bold-font;
+            color: $gray-text;
+            @include flex-v-space-h-center;
+        }
+    
+        .userContact {
+            height: 20px;
+            margin-top: 5px;
+            font-size: 16px;
+            color: $gray-text;
+            @include flex-v-space-h-center;
+        }
+    }
+
+    .commentsContainer {
+        width: 90vw;
+        margin: 20px auto;
+        background-color: rgba(255, 255, 255, 0.1);
+
+        .commentsTitle {
+            height: 20px;
+            margin: 10px;
+            font-size: 18px;
+            color: $gray-text;
+            font-weight: $bold-font;
+        }
+    
+        .comments {
+            height: 230px;
+            margin-top: 10px;
+            display: flex;
+            @include flex-v-space-h-center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 10px;
+            @include common-slider;
+    
+            .commentContainer {
+                width: 20vw;
+                min-width: 300px;
+                height: 200px;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: $default-box-shadow;
+
+                @media (max-width: 1400px) {
+                    height: 250px;
+                }
+    
+                .commentBody {
+                    height: 125px;
+
+                    @media (max-width: 1400px) {
+                        height: 165px;
+                    }
+                }
+    
+                .commentatorContact {
+                    margin-top: 5px;
+                    font-size: 16px;
+                    color: $gray-text;
+                }
+            }
+        }
+    }
+}

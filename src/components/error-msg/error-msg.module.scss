@@ -1,0 +1,11 @@
+@import '../../styles//base';
+
+.error {
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    @include flex-v-h-center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: $light-bold-font;;
+}
